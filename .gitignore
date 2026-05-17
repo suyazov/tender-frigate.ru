@@ -1,0 +1,48 @@
+# WordPress core config
+wp-config.php
+wp-config-docker.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Uploads (сохранить структуру папок)
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+
+# Cache
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/backup-db/*
+
+# Стандартные темы (кроме fregat)
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentyfive/
+
+# Стандартные плагины
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+
+# Тема fregat - бэкапы и импорты
+wp-content/themes/fregat/*.bak*
+wp-content/themes/fregat/import-*.php
+
+# Documentation (только для git, не для продакшена)
+# При деплое через rsync используйте: --exclude=docs
+# Или добавьте в .gitignore на сервере: docs/
+
+# Docker (локальная разработка)
+docker-compose.yml

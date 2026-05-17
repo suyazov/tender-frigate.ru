@@ -1,0 +1,146 @@
+/* Supplemental Tailwind utilities for tender-frigate.ru */
+
+/* Gold opacity variants */
+.bg-gold\/5{background-color:rgba(212,175,55,0.05)}
+.bg-gold\/10{background-color:rgba(212,175,55,0.1)}
+.bg-gold\/20{background-color:rgba(212,175,55,0.2)}
+.bg-gold\/30{background-color:rgba(212,175,55,0.3)}
+.border-gold\/20{border-color:rgba(212,175,55,0.2)}
+.border-gold\/30{border-color:rgba(212,175,55,0.3)}
+.hover\:border-gold\/30:hover{border-color:rgba(212,175,55,0.3)}
+.hover\:bg-gold\/5:hover{background-color:rgba(212,175,55,0.05)}
+.hover\:bg-gold\/20:hover{background-color:rgba(212,175,55,0.2)}
+
+/* Red opacity variants */
+.bg-red-500\/3{background-color:rgba(239,68,68,0.03)}
+.bg-red-500\/5{background-color:rgba(239,68,68,0.05)}
+.bg-red-500\/10{background-color:rgba(239,68,68,0.1)}
+.border-red-500\/20{border-color:rgba(239,68,68,0.2)}
+
+/* Blue opacity variants */
+.bg-blue-500\/5{background-color:rgba(59,130,246,0.05)}
+.bg-blue-500\/10{background-color:rgba(59,130,246,0.1)}
+
+/* Purple opacity variants */
+.bg-purple-500\/10{background-color:rgba(168,85,247,0.1)}
+
+/* Gold gradient colors */
+.from-gold-500\/10{--tw-gradient-from:rgba(212,175,55,0.1)}
+.to-gold-600\/5{--tw-gradient-to:rgba(184,134,11,0.05)}
+
+/* Spacing */
+.pt-32{padding-top:8rem}
+.py-16{padding-top:4rem;padding-bottom:4rem}
+.py-24{padding-top:6rem;padding-bottom:6rem}
+.md\:py-32{padding-top:8rem;padding-bottom:8rem}
+.gap-16{gap:4rem}
+
+/* Typography */
+.font-black{font-weight:900}
+.tracking-tight{letter-spacing:-0.025em}
+.tracking-\[0\.2em\]{letter-spacing:0.2em}
+.leading-\[0\.95\]{line-height:0.95}
+.text-\[10px\]{font-size:10px}
+
+/* Shadows */
+.shadow-lg{--tw-shadow:0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}
+.shadow-2xl{--tw-shadow:0 25px 50px -12px #00000040;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}
+
+/* Blur effects */
+.blur-\[100px\]{--tw-blur:blur(100px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}
+.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}
+.blur-\[150px\]{--tw-blur:blur(150px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}
+.blur-\[60px\]{--tw-blur:blur(60px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}
+
+/* Hover states */
+.hover\:scale-105:hover{transform:scale(1.05)}
+.group:hover .group-hover\:bg-gold\/20{background-color:rgba(212,175,55,0.2)}
+.group:hover .group-hover\:text-gold{color:#D4AF37}
+
+/* Text colors */
+.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}
+.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}
+.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}
+.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity,1))}
+
+/* Background colors */
+.bg-\[\#0a1929\]{background-color:#0a1929}
+.bg-\[\#102a43\]{background-color:#102a43}
+.bg-\[\#142125\]{background-color:#142125}
+.bg-\[\#0d181b\]{background-color:#0d181b}
+
+/* Border */
+.border-white\/5{border-color:rgba(255,255,255,0.05)}
+.border-white\/10{border-color:rgba(255,255,255,0.1)}
+
+/* Flex */
+.flex-shrink-0{flex-shrink:0}
+.shrink-0{flex-shrink:0}
+
+/* Transform */
+.transform{transform:var(--tw-transform)}
+.-translate-y-1\/2{--tw-translate-y:-50%;transform:var(--tw-transform)}
+.-translate-x-1\/2{--tw-translate-x:-50%;transform:var(--tw-transform)}
+
+/* Overflow */
+.overflow-hidden{overflow:hidden}
+
+/* Max width */
+.max-w-md{max-width:28rem}
+.max-w-lg{max-width:32rem}
+.max-w-xl{max-width:36rem}
+.max-w-2xl{max-width:42rem}
+.max-w-3xl{max-width:48rem}
+.max-w-4xl{max-width:56rem}
+
+/* Card styles */
+.problem-card{transition:all 0.3s ease;border:1px solid rgba(255,255,255,0.05)}
+.problem-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,0.3);box-shadow:0 20px 60px -15px rgba(212,175,55,0.15)}
+
+.benefit-card{transition:all 0.3s ease;border:1px solid rgba(255,255,255,0.05)}
+.benefit-card:hover{transform:translateY(-4px);border-color:rgba(212,175,55,0.4);box-shadow:0 20px 60px -15px rgba(212,175,55,0.2)}
+.benefit-card:hover .benefit-icon{background:linear-gradient(135deg,#D4AF37,#B8860B);color:#0a1929}
+
+.reason-card{transition:all 0.3s ease}
+.reason-card:hover{transform:translateY(-4px);box-shadow:0 15px 40px -10px rgba(0,0,0,0.3)}
+
+/* Animation */
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-10px)}
+}
+@keyframes pulse-glow{
+    0%,100%{box-shadow:0 0 20px rgba(212,175,55,0.15)}
+    50%{box-shadow:0 0 40px rgba(212,175,55,0.3)}
+}
+
+/* Responsive */
+@media(min-width:640px){
+  .sm\:text-5xl{font-size:3rem;line-height:1}
+  .sm\:flex-row{flex-direction:row}
+}
+@media(min-width:768px){
+  .md\:py-32{padding-top:8rem;padding-bottom:8rem}
+  .md\:p-10{padding:2.5rem}
+  .md\:text-6xl{font-size:3.75rem;line-height:1}
+  .md\:h-\[80px\]{height:80px}
+}
+@media(min-width:1024px){
+  .lg\:text-7xl{font-size:4.5rem;line-height:1}
+  .lg\:col-span-2{grid-column:span 2/span 2}
+  .lg\:px-8{padding-left:2rem;padding-right:2rem}
+  .lg\:gap-16{gap:4rem}
+  .lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Text sizes */
+.text-6xl{font-size:3.75rem;line-height:1}
+.text-7xl{font-size:4.5rem;line-height:1}
+
+/* Quiz styles */
+.quiz-option{transition:all 0.2s ease}
+.quiz-option:hover{border-color:rgba(212,175,55,0.3);background-color:rgba(212,175,55,0.05)}
+
+/* Table hover */
+.pricing-table tr{transition:background 0.2s ease}
+.pricing-table tr:hover{background:rgba(212,175,55,0.05)}
