@@ -153,3 +153,23 @@ function fregat_contact_js_data() {
 add_action('wp_enqueue_scripts', 'fregat_contact_js_data');
 
 require_once get_template_directory() . '/inc/telegram-notifier.php';
+
+// Quizle — русские тексты кнопок
+add_filter('quizle/steps/prev_btn_text', function() { return 'Назад'; });
+add_filter('quizle/steps/next_btn_text', function() { return 'Далее'; });
+
+// Quizle — русский текст при отправке
+add_filter('gettext', function($translated, $text, $domain) {
+    if ($domain === 'quizle') {
+        $translations = [
+            'Submitting data...' => 'Отправляем заявку...',
+            'Preparing Results...' => 'Подготавливаем результат...',
+            'Quizle completion time has expired.' => 'Время прохождения квиза истекло.',
+            'Time left:' => 'Осталось:',
+        ];
+        if (isset($translations[$text])) {
+            return $translations[$text];
+        }
+    }
+    return $translated;
+}, 10, 3);
