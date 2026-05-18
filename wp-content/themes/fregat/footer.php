@@ -56,7 +56,7 @@
 
 <?php wp_footer(); ?>
 
-<!-- Quizle: русские тексты -->
+<!-- Quizle: русские тексты + Метрика цель -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.quizle-contacts [data-toggle_txt]').forEach(function(btn) {
@@ -67,6 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     document.querySelectorAll('.quizle-contacts input[name="data[contacts][phone]"]').forEach(function(inp) {
         inp.placeholder = '+7 (___) ___-__-__';
+    });
+
+    // Yandex.Metrika — цель «Квиз отправлен»
+    document.addEventListener('quizle:submit_contacts', function() {
+        if (typeof ym === 'function') {
+            ym(109284827, 'reachGoal', 'quiz_submit');
+        }
     });
 });
 </script>
