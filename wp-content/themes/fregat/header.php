@@ -70,13 +70,13 @@
 				<span class="hidden sm:block text-[10px] text-gray-400 tracking-widest uppercase">Тендерное сопровождение</span>
 			</div>
 		</a>
-		<nav class="hidden md:flex gap-8 text-sm text-gray-300">
-			<a href="#problems" class="hover:text-white transition">Проблемы</a>
-			<a href="#cases" class="hover:text-white transition">Кейсы</a>
-			<a href="#pricing" class="hover:text-white transition">Стоимость</a>
-			<a href="#advantages" class="hover:text-white transition">Преимущества</a>
-			<a href="#quiz" class="hover:text-white transition">Подобрать тариф</a>
-			<a href="#contact" class="ml-4 btn-gold px-6 py-3 rounded text-sm tracking-wide">Связаться</a>
+		<nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+			<a href="#challenges" class="py-3 hover:text-white transition">Ваши задачи</a>
+				<a href="#cases" class="py-3 hover:text-white transition">Кейсы</a>
+			<a href="#benefits" class="py-3 hover:text-white transition">Наши услуги</a>
+			<a href="#pricing" class="py-3 hover:text-white transition">Стоимость</a>
+			<a href="#contact" class="py-3 hover:text-white transition">Контакты</a>
+			<a href="#quiz" class="ml-4 btn-gold px-6 py-3 rounded text-sm tracking-wide">Связаться</a>
 		</nav>
 		<button class="mobile-menu-toggle md:hidden" aria-label="Меню">
 			<span class="hamburger-line"></span>
@@ -87,14 +87,14 @@
 	<!-- Мобильное меню -->
 	<div class="nav-links hidden flex-col absolute top-full left-0 right-0 backdrop-blur-md border-b border-white/10 md:hidden z-50" style="background-color: rgba(20, 33, 37, 0.98);">
 		<nav class="flex flex-col text-sm text-gray-300 px-6 py-2">
-			<a href="#problems" class="py-3 border-b border-white/10 hover:text-white transition">Проблемы</a>
-			<a href="#cases" class="py-3 border-b border-white/10 hover:text-white transition">Кейсы</a>
-			<a href="#advantages" class="py-3 border-b border-white/10 hover:text-white transition">Преимущества</a>
+			<a href="#challenges" class="py-3 border-b border-white/10 hover:text-white transition">Ваши задачи</a>
+				<a href="#cases" class="py-3 border-b border-white/10 hover:text-white transition">Кейсы</a>
+			<a href="#benefits" class="py-3 border-b border-white/10 hover:text-white transition">Наши услуги</a>
 			<a href="#pricing" class="py-3 border-b border-white/10 hover:text-white transition">Стоимость</a>
 			<a href="#contact" class="py-3 hover:text-white transition">Контакты</a>
 		</nav>
 		<div class="px-6 pb-4 pt-2">
-			<a href="#contact" class="btn-gold px-6 py-3 rounded text-sm tracking-wide block text-center">Связаться с нами</a>
+			<a href="#quiz" class="btn-gold px-6 py-3 rounded text-sm tracking-wide block text-center">Связаться с нами</a>
 		</div>
 	</div>
 </header>
