@@ -154,6 +154,16 @@ function fregat_sitemap() {
         'priority' => '1.0',
     ];
 
+    $policy = get_page_by_path('politika-konfidentsialnosti');
+    if ($policy) {
+        $items[] = [
+            'loc' => get_permalink($policy),
+            'lastmod' => get_the_modified_date('c', $policy),
+            'changefreq' => 'monthly',
+            'priority' => '0.3',
+        ];
+    }
+
     header('Content-Type: application/xml; charset=UTF-8');
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
