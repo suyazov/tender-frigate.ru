@@ -157,7 +157,7 @@ require_once get_template_directory() . '/inc/telegram-notifier.php';
 // Quizle — русские тексты кнопок
 add_filter('quizle/steps/prev_btn_text', function() { return 'Назад'; });
 add_filter('quizle/steps/next_btn_text', function() { return 'Далее'; });
-add_filter('quizle/result/default_btn_text', function() { return 'Отлично'; });
+add_filter('quizle/result/default_btn_text', function() { return ''; });
 
 // Quizle — русский текст при отправке
 add_filter('gettext', function($translated, $text, $domain) {
