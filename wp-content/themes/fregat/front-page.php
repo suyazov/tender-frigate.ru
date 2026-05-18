@@ -153,28 +153,28 @@ get_header();
 						</div>
 
 						<!-- Потери -->
-						<div class="mt-16 bg-[#142125] border border-red-500/20 rounded-xl p-8 max-w-4xl mx-auto">
-							<h3 class="text-xl font-bold mb-8 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
-							<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-								<div class="text-center">
-									<div class="text-3xl md:text-4xl font-bold text-gold-gradient mb-2">∞</div>
-									<div class="text-white font-semibold text-sm">Упущенных контрактов</div>
-									<p class="text-gray-500 text-xs mt-2">Каждый день выходят новые закупки в вашей сфере — их забирают другие</p>
+						<div class="mt-24 bg-[#0d181b] border border-gold/20 rounded-xl p-8 md:p-10 max-w-4xl mx-auto">
+							<h3 class="text-xl font-bold mb-10 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
+							<div class="grid grid-cols-2 md:grid-cols-4 md:gap-0">
+								<div class="text-center px-4">
+									<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-3">&infin;</div>
+									<div class="text-white font-semibold text-sm mb-2">Упущенных контрактов</div>
+									<p class="text-gray-500 text-xs leading-relaxed">Каждый день выходят новые закупки в вашей сфере &mdash; их забирают другие</p>
 								</div>
-								<div class="text-center">
-									<div class="text-3xl md:text-4xl font-bold text-gold-gradient mb-2">80 000+ ₽</div>
-									<div class="text-white font-semibold text-sm">Стоимость ошибки</div>
-									<p class="text-gray-500 text-xs mt-2">Средний штраф за нарушение закупочного законодательства</p>
+								<div class="text-center px-4 md:border-l md:border-gold/15">
+									<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-3">80&nbsp;000+&nbsp;&#8381;</div>
+									<div class="text-white font-semibold text-sm mb-2">Стоимость ошибки</div>
+									<p class="text-gray-500 text-xs leading-relaxed">Средний штраф за нарушение закупочного законодательства</p>
 								</div>
-								<div class="text-center">
-									<div class="text-3xl md:text-4xl font-bold text-gold-gradient mb-2">2 года</div>
-									<div class="text-white font-semibold text-sm">Риск блокировки</div>
-									<p class="text-gray-500 text-xs mt-2">Попадание в РНП — и ваша компания не сможет участвовать в закупках</p>
+								<div class="text-center px-4 md:border-l md:border-gold/15">
+									<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-3">2&nbsp;года</div>
+									<div class="text-white font-semibold text-sm mb-2">Риск блокировки</div>
+									<p class="text-gray-500 text-xs leading-relaxed">Попадание в РНП &mdash; и ваша компания не сможет участвовать в закупках</p>
 								</div>
-								<div class="text-center">
-									<div class="text-3xl md:text-4xl font-bold text-gold-gradient mb-2">0</div>
-									<div class="text-white font-semibold text-sm">Побед без поддержки</div>
-									<p class="text-gray-500 text-xs mt-2">Большинство компаний без опыта уходят из тендеров после первой неудачи</p>
+								<div class="text-center px-4 md:border-l md:border-gold/15">
+									<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-3">0</div>
+									<div class="text-white font-semibold text-sm mb-2">Побед без поддержки</div>
+									<p class="text-gray-500 text-xs leading-relaxed">Большинство компаний без опыта уходят из тендеров после первой неудачи</p>
 								</div>
 							</div>
 						</div>
