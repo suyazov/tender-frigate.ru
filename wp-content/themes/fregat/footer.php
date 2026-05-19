@@ -17,7 +17,8 @@
 				<h2 class="text-white font-semibold mb-4">Навигация</h2>
 				<div class="text-sm flex flex-col gap-2">
 					<a href="#challenges" class="text-gray-400 hover:text-gold transition">Ваши задачи</a>
-					<a href="#benefits" class="text-gray-400 hover:text-gold transition">Наши услуги</a>
+					<a href="#benefits" class="text-gray-400 hover:text-gold transition">Услуги</a>
+					<a href="#cases" class="text-gray-400 hover:text-gold transition">Кейсы</a>
 					<a href="#pricing" class="text-gray-400 hover:text-gold transition">Стоимость</a>
 					<a href="#quiz" class="text-gray-400 hover:text-gold transition">Подобрать формат</a>
 					<a href="#contact" class="text-gray-400 hover:text-gold transition">Контакты</a>
