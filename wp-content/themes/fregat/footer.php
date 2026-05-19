@@ -49,6 +49,7 @@
 					<p class="text-gray-600 text-xs mt-3">г. Ставрополь, ул. Дзержинского, д. 114, оф. 201</p>
 				</div>
 			</div>
+		</div>
 
 		<div class="border-t border-white/10 pt-8 flex flex-col gap-4">
 				<div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-500 text-sm">

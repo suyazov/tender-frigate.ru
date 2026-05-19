@@ -153,7 +153,7 @@ get_header();
 						</div>
 
 						<!-- Потери -->
-						<div class="mt-24 max-w-4xl mx-auto">
+						<div class="mt-32 max-w-4xl mx-auto">
 							<h3 class="text-xl font-bold mb-8 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
 							<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 								<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
@@ -176,6 +176,12 @@ get_header();
 									<div class="text-white font-semibold text-sm mb-2">Побед без поддержки</div>
 									<p class="text-gray-500 text-xs leading-relaxed">Компании без опыта уходят из тендеров после первой неудачи</p>
 								</div>
+							</div>
+							<div class="mt-10 text-center">
+								<a href="tel:+79340709990" class="inline-flex items-center gap-3 btn-gold py-4 px-10 rounded-lg text-lg tracking-wide font-semibold shadow-lg shadow-gold/20">
+									<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+									Позвонить: +7 (934) 070-99-90
+								</a>
 							</div>
 						</div>
 					</div>
@@ -508,7 +514,7 @@ get_header();
 			<!-- Онлайн-школа -->
 			<section class="py-24 border-t border-white/5">
 				<div class="max-w-7xl mx-auto px-6">
-					<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="grid md:grid-cols-2 gap-12 items-stretch">
 						<div>
 							<div class="inline-flex items-center gap-2 px-4 py-2 bg-gold/10 border border-gold rounded-full mb-6">
 								<span class="text-gold-gradient font-semibold text-xs uppercase tracking-wider">Наша онлайн-школа</span>
@@ -538,7 +544,7 @@ get_header();
 								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
 							</a>
 						</div>
-						<div class="bg-[#0d181b] border border-gold/30 rounded-xl p-8 text-center">
+						<div class="bg-[#0d181b] border border-gold/30 rounded-xl p-8 text-center h-full flex flex-col justify-center">
 							<div class="w-20 h-20 mx-auto mb-6 border-2 border-gold rounded-full flex items-center justify-center">
 								<svg class="w-10 h-10 text-gold opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
 							</div>
