@@ -154,7 +154,7 @@ get_header();
 
 						<!-- Потери -->
 						<div class="mt-40 max-w-4xl mx-auto">
-							<h3 class="text-xl font-bold mb-10 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
+							<h3 class="text-xl font-bold mb-10 mt-[50px] text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
 							<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 								<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
 									<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">&infin;</div>
