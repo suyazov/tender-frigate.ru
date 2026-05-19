@@ -72,8 +72,8 @@
 		</a>
 		<nav class="hidden md:flex items-center gap-6 text-sm text-gray-300">
 			<a href="#challenges" class="py-3 hover:text-white transition">Ваши задачи</a>
-			<a href="#cases" class="py-3 hover:text-white transition">Кейсы</a>
 			<a href="#benefits" class="py-3 hover:text-white transition">Услуги</a>
+			<a href="#cases" class="py-3 hover:text-white transition">Кейсы</a>
 			<a href="#pricing" class="py-3 hover:text-white transition">Стоимость</a>
 			<div class="flex items-center gap-3 ml-2">
 				<a href="tel:+79340709990" class="hover:text-gold transition" title="Позвонить"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></a>
@@ -93,8 +93,8 @@
 	<div class="nav-links hidden flex-col absolute top-full left-0 right-0 backdrop-blur-md border-b border-white/10 md:hidden z-50" style="background-color: rgba(20, 33, 37, 0.98);">
 		<nav class="flex flex-col text-sm text-gray-300 px-6 py-2">
 			<a href="#challenges" class="py-3 border-b border-white/10 hover:text-white transition">Ваши задачи</a>
-				<a href="#cases" class="py-3 border-b border-white/10 hover:text-white transition">Кейсы</a>
 			<a href="#benefits" class="py-3 border-b border-white/10 hover:text-white transition">Услуги</a>
+				<a href="#cases" class="py-3 border-b border-white/10 hover:text-white transition">Кейсы</a>
 			<a href="#pricing" class="py-3 border-b border-white/10 hover:text-white transition">Стоимость</a>
 		</nav>
 		<div class="px-6 pb-4 pt-2 flex flex-col gap-2">
