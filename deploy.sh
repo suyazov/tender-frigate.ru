@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 # Деплой tender-frigate.ru на production
-# ./deploy.sh          — залить тему + плагины
+# ./deploy.sh          — быстрый: только PHP-файлы темы (rsync)
+# ./deploy.sh --full   — полная синхронизация (тема + плагины + mu-plugins)
 # ./deploy.sh --ssl    — переключить URL на https://
 # ./deploy.sh --db     — залить дамп локальной БД (перезапишет контент!)
 #
@@ -34,11 +35,13 @@ ssh -o BatchMode=yes -o ConnectTimeout=5 "$REMOTE" "echo ok" > /dev/null 2>&1 ||
 
 DEPLOY_DB=false
 DEPLOY_SSL=false
+DEPLOY_FULL=false
 
 for arg in "$@"; do
     case $arg in
-        --db)  DEPLOY_DB=true ;;
-        --ssl) DEPLOY_SSL=true ;;
+        --db)   DEPLOY_DB=true ;;
+        --ssl)  DEPLOY_SSL=true ;;
+        --full) DEPLOY_FULL=true ;;
     esac
 done
 
@@ -47,23 +50,30 @@ echo "=== Деплой tender-frigate.ru ==="
 echo ""
 
 # 1. Тема
-info "Загрузка темы..."
-scp -r "$LOCAL_THEME" "$REMOTE:$REMOTE_PATH/wp-content/themes/" 2>/dev/null
+if [ "$DEPLOY_FULL" = true ]; then
+    info "Полная синхронизация темы (rsync)..."
+    rsync -az --delete "$LOCAL_THEME/" "$REMOTE:$REMOTE_PATH/wp-content/themes/fregat/"
+else
+    info "Быстрый деплой — только PHP-файлы темы..."
+    rsync -az --include='*.php' --include='*/' --exclude='*' "$LOCAL_THEME/" "$REMOTE:$REMOTE_PATH/wp-content/themes/fregat/"
+fi
 info "Тема загружена"
 
-# 2. Плагины
-info "Загрузка плагинов..."
-for plugin in advanced-custom-fields-pro quizle; do
-    if [ -d "$LOCAL_PLUGINS/$plugin" ]; then
-        scp -r "$LOCAL_PLUGINS/$plugin" "$REMOTE:$REMOTE_PATH/wp-content/plugins/" 2>/dev/null
-        info "  $plugin"
-    fi
-done
+# 2. Плагины (только при --full)
+if [ "$DEPLOY_FULL" = true ]; then
+    info "Загрузка плагинов..."
+    for plugin in advanced-custom-fields-pro quizle; do
+        if [ -d "$LOCAL_PLUGINS/$plugin" ]; then
+            rsync -az "$LOCAL_PLUGINS/$plugin/" "$REMOTE:$REMOTE_PATH/wp-content/plugins/$plugin/"
+            info "  $plugin"
+        fi
+    done
+fi
 
-# 3. Mu-plugins
-if [ -d "$LOCAL_MU_PLUGINS" ]; then
+# 3. Mu-plugins (только при --full)
+if [ "$DEPLOY_FULL" = true ] && [ -d "$LOCAL_MU_PLUGINS" ]; then
     info "Загрузка mu-plugins..."
-    scp -r "$LOCAL_MU_PLUGINS" "$REMOTE:$REMOTE_PATH/wp-content/" 2>/dev/null
+    rsync -az "$LOCAL_MU_PLUGINS/" "$REMOTE:$REMOTE_PATH/wp-content/mu-plugins/"
     info "  mu-plugins"
 fi
 
