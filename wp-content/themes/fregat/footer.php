@@ -53,13 +53,13 @@
 			</div>
 		</div>
 
-		<div class="border-t border-white/10 pt-8 flex flex-col gap-4">
-				<div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
-					<div>&copy; <?php echo date('Y'); ?> ООО «ФРЕГАТ». Все права защищены.</div>
-					<a href="/politika-konfidentsialnosti/" class="text-gray-500 hover:text-gold transition">Политика конфиденциальности</a>
-				</div>
-				<div class="text-gray-600 text-xs leading-relaxed text-center">
-					ИНН 2634115968 / КПП 263401001 · ОГРН 1252600010079 · Генеральный директор: Максумова Ф.М.
+		<div class="border-t border-white/10 pt-8">
+				<div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-gray-500 text-sm text-center">
+					<span>&copy; <?php echo date('Y'); ?> ООО &laquo;ФРЕГАТ&raquo;</span>
+					<span class="text-gray-600">&middot;</span>
+					<a href="/politika-konfidentsialnosti/" class="hover:text-gold transition">Политика конфиденциальности</a>
+					<span class="text-gray-600">&middot;</span>
+					<span class="text-gray-600 text-xs">ИНН 2634115968 / КПП 263401001 &middot; ОГРН 1252600010079 &middot; Генеральный директор: Максумова Ф.М.</span>
 				</div>
 			</div>
 	</div>
