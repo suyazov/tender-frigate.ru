@@ -95,9 +95,10 @@
 			</div>
 		</div>
 		<div class="mt-12 text-center">
-			<a href="tel:<?php echo esc_attr(fregat_contact('primary_phone_raw')); ?>" class="inline-flex items-center gap-3 btn-gold py-4 px-10 rounded-lg text-lg tracking-wide font-semibold shadow-lg shadow-gold/20">
+			<a href="tel:<?php echo esc_attr(fregat_contact('primary_phone_raw')); ?>" class="inline-flex items-center gap-3 btn-gold py-4 px-10 rounded-lg text-lg tracking-wide font-semibold shadow-lg shadow-gold/20 animate-pulse">
 				<?php get_template_part('template-parts/svg/phone', null, ['class' => 'w-5 h-5']); ?>
-				Позвонить: <?php echo esc_html(fregat_contact('primary_phone')); ?>
+				Позвонить
+			</a>
 			</a>
 		</div>
 	</div>
