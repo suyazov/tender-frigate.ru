@@ -63,7 +63,7 @@
 <!-- Header -->
 <header class="fixed w-full top-0 z-50 backdrop-blur-md border-b border-white/10" style="background-color: rgba(20, 33, 37, 0.95);">
 	<div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-		<a href="<?php echo esc_url(home_url('/')); ?>#hero" rel="home" class="flex items-center gap-3">
+		<a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center gap-3">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="Логотип Фрегат" class="h-12 w-auto logo-clean" width="100" height="100" fetchpriority="high">
 			<div>
 				<span class="text-2xl font-light tracking-widest text-gold-gradient">ФРЕГАТ</span>
