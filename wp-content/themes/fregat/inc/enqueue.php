@@ -18,9 +18,6 @@ function fregat_enqueue_scripts() {
 	// Скрипты темы
 	wp_enqueue_script('fregat-main', get_template_directory_uri() . '/assets/js/main.js', [], '1.1.0', true);
 
-	// Прогресс скролла
-	wp_enqueue_script('fregat-scroll', get_template_directory_uri() . '/assets/js/scroll-progress.js', [], '1.1.0', true);
-
 	// Комментарии
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
