@@ -72,7 +72,7 @@
 <section class="py-24 border-t border-white/5 bg-[#142125]">
 	<div class="max-w-7xl mx-auto px-6">
 		<h3 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
-		<div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 			<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
 				<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">&infin;</div>
 				<div class="text-white font-semibold text-sm mb-2">Упущенных контрактов</div>
