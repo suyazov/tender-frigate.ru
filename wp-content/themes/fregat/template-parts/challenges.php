@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Part: Challenges / Loss Section
+ * Template Part: Challenges Section
  *
  * @package Fregat
  */
@@ -62,41 +62,43 @@
 					<svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
 				</div>
 				<h3 class="font-semibold mb-2 text-white">Тендерный отдел — дорого</h3>
-				<p class="text-gray-400 text-sm">Найм, обучение, зарплаты. Отдельный специалист обойдётся от 80 000 ₽/мес — без гарантии результата</p>
+				<p class="text-gray-400 text-sm">Найм, обучение, зарплаты. Отдельный специалист обойдётся от 80 000 ₽/мес — без гарантии результата</p>
 			</div>
 		</div>
+	</div>
+</section>
 
-		<!-- Потери -->
-		<div class="mt-52 max-w-4xl mx-auto">
-			<h3 class="text-xl font-bold mb-10 mt-28 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-				<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
-					<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">&infin;</div>
-					<div class="text-white font-semibold text-sm mb-2">Упущенных контрактов</div>
-					<p class="text-gray-500 text-xs leading-relaxed">Каждый день выходят закупки в вашей сфере &mdash; их забирают другие</p>
-				</div>
-				<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
-					<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">80&nbsp;000+&nbsp;&#8381;</div>
-					<div class="text-white font-semibold text-sm mb-2">Стоимость ошибки</div>
-					<p class="text-gray-500 text-xs leading-relaxed">Средний штраф за нарушение закупочного законодательства</p>
-				</div>
-				<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
-					<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">2&nbsp;года</div>
-					<div class="text-white font-semibold text-sm mb-2">Риск блокировки</div>
-					<p class="text-gray-500 text-xs leading-relaxed">Попадание в РНП &mdash; компания не сможет участвовать в закупках</p>
-				</div>
-				<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
-					<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">0</div>
-					<div class="text-white font-semibold text-sm mb-2">Побед без поддержки</div>
-					<p class="text-gray-500 text-xs leading-relaxed">Компании без опыта уходят из тендеров после первой неудачи</p>
-				</div>
+<!-- Потери -->
+<section class="py-24 border-t border-white/5 bg-[#142125]">
+	<div class="max-w-7xl mx-auto px-6">
+		<h3 class="text-2xl md:text-3xl font-bold mb-12 text-center text-white">Цена бездействия — вот что вы теряете каждый месяц:</h3>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+			<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
+				<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">&infin;</div>
+				<div class="text-white font-semibold text-sm mb-2">Упущенных контрактов</div>
+				<p class="text-gray-500 text-xs leading-relaxed">Каждый день выходят закупки в вашей сфере &mdash; их забирают другие</p>
 			</div>
-			<div class="mt-12 text-center">
-				<a href="tel:<?php echo fregat_contact('primary_phone_raw'); ?>" class="inline-flex items-center gap-3 btn-gold py-4 px-10 rounded-lg text-lg tracking-wide font-semibold shadow-lg shadow-gold/20">
-					<?php get_template_part('template-parts/svg/phone', null, ['class' => 'w-5 h-5']); ?>
-					Позвонить: <?php echo fregat_contact('primary_phone'); ?>
-				</a>
+			<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
+				<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">80&nbsp;000+&nbsp;&#8381;</div>
+				<div class="text-white font-semibold text-sm mb-2">Стоимость ошибки</div>
+				<p class="text-gray-500 text-xs leading-relaxed">Средний штраф за нарушение закупочного законодательства</p>
 			</div>
+			<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
+				<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">2&nbsp;года</div>
+				<div class="text-white font-semibold text-sm mb-2">Риск блокировки</div>
+				<p class="text-gray-500 text-xs leading-relaxed">Попадание в РНП &mdash; компания не сможет участвовать в закупках</p>
+			</div>
+			<div class="bg-[#0d181b] border border-gold/20 rounded-xl p-5 text-center">
+				<div class="text-4xl md:text-5xl font-bold text-gold-gradient mb-2">0</div>
+				<div class="text-white font-semibold text-sm mb-2">Побед без поддержки</div>
+				<p class="text-gray-500 text-xs leading-relaxed">Компании без опыта уходят из тендеров после первой неудачи</p>
+			</div>
+		</div>
+		<div class="mt-12 text-center">
+			<a href="tel:<?php echo esc_attr(fregat_contact('primary_phone_raw')); ?>" class="inline-flex items-center gap-3 btn-gold py-4 px-10 rounded-lg text-lg tracking-wide font-semibold shadow-lg shadow-gold/20">
+				<?php get_template_part('template-parts/svg/phone', null, ['class' => 'w-5 h-5']); ?>
+				Позвонить: <?php echo esc_html(fregat_contact('primary_phone')); ?>
+			</a>
 		</div>
 	</div>
 </section>
